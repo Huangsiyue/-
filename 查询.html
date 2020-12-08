@@ -1,0 +1,90 @@
+<! DOCTYPE  html > 
+    <html  lang ="en"> 
+     <head> 
+         <meta  charset ="utf-8"> 
+         <meta  http-equiv ="X-UA-Compatible"  content ="IE=edge"> 
+         <meta  name ="viewport"  content ="width=device-width, initial-scale=1.0"> 
+         <meta  name ="description"  content =""> 
+         <meta  name ="author"  content =""> 
+     
+         <title>约自习时间段查询 </title> 
+
+         <link  rel ="stylesheet"  href ="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap.min.css"> 
+         <link  rel ="stylesheet"  href ="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/css/bootstrap-theme.min.css"> 
+
+         <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]--> 
+         <!--[if lt IE 9]> 
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> 
+        <![endif]--> 
+     
+         <style> 
+             .bs-docs-home 
+            { 
+             background-color:  white; 
+             background-image:  url(line.png); 
+            } 
+     </style> 
+</head> 
+
+<body  class ="bs-docs-home"> 
+     <div  class ="container theme-showcase"> 
+         <h1  style ="  line-height :2em;">  </h1><br/> 
+       
+         <div  class ="row"> 
+             <div  class ="col-sm-3"></div> 
+         <div  class ="col-sm-6"> 
+             <div  class ="panel panel-primary"> 
+                 <div  class ="panel-heading"> 
+                     <h3  class ="panel-title"><strong>约自习时间段查询 </strong></h3> 
+                 </div> 
+                 <div  class ="panel-body"> 
+                    <div  class ="alert alert-danger alert-dismissable"> 
+                        <button  type ="button"  class ="close"  data-dismiss ="alert"  aria-hidden ="true"> &times; </button> 
+                        <strong>注意! </strong> 一切查询结果以实际为准 </div> 
+               
+                        <form  role ="form"  name ="form1"> 
+
+                            <div  class ="form-group"> 
+                                <label  for ="IDCard">请输入您想约自习的时间段 </label> 
+                                <div  class ="input-group"> 
+                                    <input  type ="text"  class ="form-control"  id ="IDCard"  name ="IDCard"  placeholder ="自习时间段"> 
+                                    <span  class ="input-group-btn"> 
+                                        <button  class ="btn btn-default"  type ="button"  onClick ="form1.submit();">查询 </button> 
+                                    </span> 
+                                </div> 
+                            </div> 
+                        </form> 
+            
+                        <div  class ="alert alert-danger alert-dismissable"> 
+                            <button  type ="button"  class ="close"  data-dismiss ="alert"  aria-hidden ="true"> &times; </button> 
+                            <strong>注意! </strong> 没有查到合适的信息，你可以 <strong><a>发布一条</a> </strong>
+                        </div>  
+             
+                        <div  class ="table-responsive"> 
+                             <table   border ="0"  cellspacing ="0"  cellpadding ="0"  class ="table"> 
+                                <tr  class =" label-primary"> 
+                                    <th  scope ="col"  width ="50%"  >姓名 </span></th> 
+                                    <th  scope ="col">课室和时间</span></th> 
+                                </tr> 
+                                <tr  class ="active"> 
+                                    <td  width ="50%">张三 </td> 
+                                    <td >博学楼101 下午三点到五点 </td> 
+                                </tr> 
+                                <tr  class ="success"> 
+                                     <td>李四 </td> 
+                                    <td>博学楼210 晚上六点到九点 </td> 
+                                </tr> 
+                            </table> 
+                        </div>          
+                    </div> 
+                </div> 
+            </div> 
+      
+            <div  class ="col-sm-3"></div> 
+         </div> 
+     </div>  
+     <script  src ="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+     <script  src ="http://cdn.bootcss.com/twitter-bootstrap/3.0.1/js/bootstrap.min.js"></script> 
+</body> 
+</html>

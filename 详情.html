@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自习相关详情</title>
+<style>
+a {
+    /* 相对定位 */
+    position: relative;
+    width:400px;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    /* 圆角属性 */
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    z-index: 1;
+}
+
+/* 下面设计 发光效果 */
+a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 元素的位置 底层或者顶层  -值表示底层 + 值表示顶层 */
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    filter: blur(20px);
+}
+
+a:hover {
+    /* 动画 名称 时间 infinite 是无限次播放 */
+    animation: sun 8s infinite;
+}
+
+a:hover::before {
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}
+a:{width: 200px;height: 50px}
+</style>
+</head>
+<body>
+<head><style>
+*{margin:0px;padding: 0;list-style: none;}
+        .content{
+            width: 800px;margin: 20px auto; overflow: hidden;
+        }
+        .essentialInformation .skill .educationalBackground .projectExperience .zwpj {overflow: hidden;}
+        .head {text-align: center;width: 100%;height: 80px;background: #778899;float: left;line-height:80px;}
+
+
+           .biaoti {width: 160px;font-size: 20px;font-weight: 500;color: #000;background: #C0C0C0;float: left;height: 100px;line-height:100px;margin-top: 4px;text-align: center;}
+        .neirong { width: 639px;background:white;height: 98px;float: right;margin-top: 4px;border-top: 1px solid #C0C0C0;border-bottom: 1px solid #C0C0C0;border-right: 1px solid #C0C0C0;}
+        .neirong p {vertical-align: middle;}
+   </style></head><body>
+    <div class="content">
+        <div class="head">
+            <h1>自习伙伴详情</h1>
+        </div>
+
+        <div class="essentialInformation">
+            <div class="biaoti">
+                <p>基本信息</p>
+            </div>
+            <div class="neirong">
+                <span><strong>姓名：</strong>张三</span>      
+                <span><strong>性别：</strong>男</span>      
+                <span><strong>电话：</strong>123456789</span><br>
+                <span><strong>学号：</strong>20xx12345678</span>
+                <span><strong>专业：</strong>信息工程</span>  
+            </div>
+
+        </div>
+
+        <div class="educationalBackground">
+            <div class="biaoti">
+                <p>TA发布的自习</p>
+
+            </div>
+            <div class="neirong">
+                <p>地点：博学楼210</p>
+                <p>日期：2020.12.6</p>
+                <p>具体时间段：下午三点到五点</p>
+            </div>
+
+        </div>
+        <div class="projectExperience">
+            <div class="biaoti">
+                <p>别人对他的评价</p>
+            </div>
+            <div class="neirong">
+                <ul>性格好</ul>
+                <li>会十分耐心地帮助自习伙伴解决学习上遇到的困难</li>
+                <ul>长的还算可以</ul>
+                <li>一起自习的不二人选</li>
+            </div>
+
+
+        </div>
+        <div class="zwpj">
+            <div class="biaoti">
+                <p>备注</p>
+            </div>
+            <div class="neirong">
+                <p>自习当天身穿白色印有狗头的卫衣</p>
+            </div>
+
+        </div>
+    </div>
+<div>
+     <center><a herf ="#">返回</a></center>
+</div>
+
+</body>
+</html>
